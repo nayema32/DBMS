@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+<!-- create add student form-->
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center" style="color: #5a5a5a;">Add New Student</h2>
+    <form action="{{ url_for('add_student') }}" method="POST" class="mt-4" style="max-width: 600px; margin: auto;">
+        <div class="form-group">
+            <label for="student_id" style="font-weight: bold; color: #4a4a4a;">Student ID</label>
+            <input type="text" class="form-control" id="student_id" name="student_id" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="name" style="font-weight: bold; color: #4a4a4a;">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="year_of_enrollment" style="font-weight: bold; color: #4a4a4a;">Year of Enrollment</label>
+            <input type="number" class="form-control" id="year_of_enrollment" name="year_of_enrollment" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="major" style="font-weight: bold; color: #4a4a4a;">Major</label>
+            <input type="text" class="form-control" id="major" name="major" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="gender" style="font-weight: bold; color: #4a4a4a;">Gender</label>
+            <select class="form-control" id="gender" name="gender" required style="border-radius: 10px; border: 1px solid #ccc;">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="birth_year" style="font-weight: bold; color: #4a4a4a;">Birth Year</label>
+            <input type="number" class="form-control" id="birth_year" name="birth_year" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="region" style="font-weight: bold; color: #4a4a4a;">Region</label>
+            <input type="text" class="form-control" id="region" name="region" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <div class="form-group">
+            <label for="email" style="font-weight: bold; color: #4a4a4a;">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required style="border-radius: 10px; border: 1px solid #ccc;">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" style="border-radius: 10px; background-color: #007bff; border-color: #007bff;">Add Student</button>
+    </form>
+</div>
+{% endblock %}

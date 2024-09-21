@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Update Student Information</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="student_id">Student ID</label>
+                <input type="text" class="form-control" id="student_id" name="student_id" required readonly>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="year_of_enrollment">Year of Enrollment</label>
+                <input type="text" class="form-control" id="year_of_enrollment" name="year_of_enrollment" required>
+            </div>
+            <div class="form-group">
+                <label for="major">Major</label>
+                <input type="text" class="form-control" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="birth_year">Birth Year</label>
+                <input type="text" class="form-control" id="birth_year" name="birth_year" required>
+            </div>
+            <div class="form-group">
+                <label for="region">Region</label>
+                <input type="text" class="form-control" id="region" name="region" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</body>
+</html>
